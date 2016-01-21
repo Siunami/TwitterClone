@@ -8,12 +8,12 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app = "chirpApp">
-    <div class = "header col-md-offset-2 col-md-8">
-      <h1> Twilio </h1>
-      <p class = "pull-right"> <i>by Matthew Siu </i></p>
-    </div> <!--end header-->
     <div id = 'main' class = "container" ng-controller = "mainController">
       <div class="col-md-offset-2 col-md-8">
+        <div class = "header">
+          <h1> Twilio </h1>
+          <p class = "pull-right"> <i>by Matthew Siu </i></p>
+        </div> <!--end header-->
         <div class = "clearfix">
           <form ng-Submit = "post()">
             <input required type="text" class = "form-control" placeholder= "Your name" ng-model = "newPost.created_by"/>
